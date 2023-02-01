@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkgray;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: gray;
+}
+
+.hero-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 50vw;
+}
+
+.projectinfo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectinfo {
+    margin-top: 3em;
+    width: 50vw;
+}
+
+.projectinfo h1 {
+    border-bottom: 1px solid white;
+    line-height: 70px;
+}
+
+.text1 {
+    margin-top: 10em;
+    text-align: center;
+}
+
+.container-main {
+    display: flex;
+}
+
+.container
+{
+  position:relative;
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+}
+.container .card
+{
+  position:relative;
+  min-width:15em;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:300px;
+  border-radius:4px;
+  text-align:center;
+  overflow:hidden;
+  transition:0.5s;
+}
+.percent
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background:#222;
+  z-index:1000;
+}
+.percent .num
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+}
+.percent .num h2
+{
+  color:#777;
+  font-weight:700;
+  font-size:40px;
+  transition:0.5s;
+}
+.percent .num h2 span
+{
+  color:#777;
+  font-size:24px;
+  transition:0.5s;
+}
+.text
+{
+  position:relative;
+  color:#777;
+  margin-top:20px;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+.card:hover .text
+{
+  color:#fff;
+}
+svg
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  z-index:1000;
+}
+svg circle
+{
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke:#191919;
+  stroke-width:10;
+  stroke-linecap:round;
+  transform:translate(5px,5px);
+}
+
+.perc93:nth-child(2)
+{
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+}
+.card:nth-child(1) .perc93:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 93) / 100);
+  stroke:#00ff43;
+}
+
+.perc78:nth-child(2)
+{
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+}
+.card:nth-child(1) .perc78:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 78) / 100);
+  stroke:#00ff43;
+}
+
+.perc85:nth-child(2)
+{
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+}
+.card:nth-child(1) .perc85:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 85) / 100);
+  stroke:#00ff43;
+}
+
+
+.pricing-box {
+    margin-top: 10em;
+    display: flex;
+    gap: 12.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-width: 20vw;
+    min-height: 25em;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    box-shadow: 0px 0px 49px 0px rgba(0,0,0,0.53);
+}
+
+.pricing h1 {
+    text-align: center;
+}
+
+.pricing li {
+    line-height: 2em;
+}
+
+.pricing button {
+    width: 60%;
+    height: 3em;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10%;
+    box-shadow: 0px 0px 49px -15px rgba(0,64,255,0.19);
+    color: white;
+    background: #272727;
+}
+
+.pricing button:hover {
+    box-shadow: 0px 0px 34px 0px rgba(0,64,255,.5);
+    border: none;
+}
+
+.pricing button:active {
+    box-shadow: 0px 0px 34px 0px rgba(0,64,255,.8);
+}
+
+.portfolio-box {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio img {
+    width: 20vw;
+    border-radius: 20px;
+    padding: .5em .5em;
+    border: none;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    margin-top: 3em;
+    width: 40vw;
+}
+
+.contact i {
+    font-size: 30px;
+    padding: 0 15px;
+}
