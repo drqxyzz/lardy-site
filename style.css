@@ -82,11 +82,14 @@ body {
 .projectinfo {
     margin-top: 3em;
     width: 50vw;
+    text-align: center;
 }
 
 .projectinfo h1 {
     border-bottom: 1px solid white;
     line-height: 70px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .text1 {
@@ -318,5 +321,8 @@ svg circle
   }
   .container-main {
     flex-direction: column;
+  }
+  .contact h1 {
+    text-align: center;
   }
 }
