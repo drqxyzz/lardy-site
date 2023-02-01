@@ -7,7 +7,8 @@ body {
     min-height: 100vh;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    background-color: #1b1b1b;
+    background: url(https://cdn.discordapp.com/attachments/1063472451952062474/1066833956168794142/Fb9b7jy62jWQ1GVXHTeueAJDqVdsVszimPLC4T6a.png) center center no-repeat fixed; background-size: cover;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -29,6 +30,29 @@ body {
 
 ::-webkit-scrollbar-thumb:active {
     background: gray;
+}
+
+.topnav {
+  background-color: #1b1b1b;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 0 3px 0;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  border-bottom: solid 1px white;
 }
 
 .hero-box {
@@ -166,7 +190,7 @@ svg circle
 .card:nth-child(1) .perc93:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 93) / 100);
-  stroke:#00ff43;
+  stroke:rgba(0,64,255,.5);
 }
 
 .perc78:nth-child(2)
@@ -177,7 +201,7 @@ svg circle
 .card:nth-child(1) .perc78:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 78) / 100);
-  stroke:#00ff43;
+  stroke:rgba(0,64,255,.5);
 }
 
 .perc85:nth-child(2)
@@ -188,7 +212,7 @@ svg circle
 .card:nth-child(1) .perc85:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 85) / 100);
-  stroke:#00ff43;
+  stroke:rgba(0,64,255,.5);
 }
 
 
@@ -208,8 +232,8 @@ svg circle
     min-width: 20vw;
     min-height: 25em;
     background-color: #1c1c1c;
-    border-radius: 15px;
     box-shadow: 0px 0px 49px 0px rgba(0,0,0,0.53);
+    border-radius: 20px;
 }
 
 .pricing h1 {
