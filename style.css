@@ -33,7 +33,7 @@ body {
 }
 
 .topnav {
-  background-color: #1b1b1b;
+  background: none;
   overflow: hidden;
   width: 100%;
   display: flex;
@@ -212,7 +212,7 @@ svg circle
 .card:nth-child(1) .perc85:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 85) / 100);
-  stroke:rgba(0,64,255,.5);
+  stroke: rgba(0,64,255,.5);
 }
 
 
@@ -222,6 +222,8 @@ svg circle
     gap: 12.5em;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 .pricing {
@@ -290,10 +292,16 @@ svg circle
 
 .contact {
     margin-top: 3em;
-    width: 40vw;
+    width: 80vw;
 }
 
 .contact i {
     font-size: 30px;
     padding: 0 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .pricing-box {
+    flex-direction: column;
+  }
 }
