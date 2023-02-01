@@ -194,7 +194,7 @@ svg circle
 .card:nth-child(1) .perc93:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 93) / 100);
-  stroke:rgba(0,64,255,.5);
+  stroke:rgba(119, 0, 255, 0.596);
 }
 
 .perc78:nth-child(2)
@@ -205,7 +205,7 @@ svg circle
 .card:nth-child(1) .perc78:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 78) / 100);
-  stroke:rgba(0,64,255,.5);
+  stroke:rgba(119, 0, 255, 0.596);
 }
 
 .perc85:nth-child(2)
@@ -216,7 +216,7 @@ svg circle
 .card:nth-child(1) .perc85:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 85) / 100);
-  stroke: rgba(0,64,255,.5);
+  stroke:rgba(119, 0, 255, 0.596);
 }
 
 
@@ -228,6 +228,7 @@ svg circle
     align-items: center;
     display: flex;
     flex-direction: row;
+    padding: 60px;
 }
 
 .pricing {
@@ -238,8 +239,12 @@ svg circle
     min-width: 20vw;
     min-height: 25em;
     background-color: #1c1c1c;
-    box-shadow: 0px 0px 49px 0px rgba(0,0,0,0.53);
+    box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, 0.53);
     border-radius: 20px;
+}
+
+.pricing:hover {
+  box-shadow: 0px 0px 49px 0px rgba(99, 99, 99, 0.596);
 }
 
 .pricing h1 {
@@ -257,18 +262,18 @@ svg circle
     border-radius: 10px;
     font-weight: bold;
     margin-top: 10%;
-    box-shadow: 0px 0px 49px -15px rgba(0,64,255,0.19);
+    box-shadow: 0px 0px 49px -15px rgba(119, 0, 255, 0.596);   
     color: white;
     background: #272727;
 }
 
 .pricing button:hover {
-    box-shadow: 0px 0px 34px 0px rgba(0,64,255,.5);
+    box-shadow: 0px 0px 34px 0px rgba(119, 0, 255, 0.596);
     border: none;
 }
 
 .pricing button:active {
-    box-shadow: 0px 0px 34px 0px rgba(0,64,255,.8);
+    box-shadow: 0px 0px 34px 0px rgba(119, 0, 255, 0.85);
 }
 
 .portfolio-box {
@@ -307,5 +312,8 @@ svg circle
 @media screen and (max-width: 700px) {
   .pricing-box {
     flex-direction: column;
+  }
+  .projectinfo {
+    text-align: center;
   }
 }
