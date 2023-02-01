@@ -197,7 +197,7 @@ svg circle
 .card:nth-child(1) .perc93:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 93) / 100);
-  stroke:rgba(119, 0, 255, 0.596);
+  stroke:rgba(164, 68, 244, 0.4);
 }
 
 .perc78:nth-child(2)
@@ -208,7 +208,7 @@ svg circle
 .card:nth-child(1) .perc78:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 78) / 100);
-  stroke:rgba(119, 0, 255, 0.596);
+  stroke: rgba(164, 68, 244, 0.7);
 }
 
 .perc85:nth-child(2)
@@ -219,7 +219,7 @@ svg circle
 .card:nth-child(1) .perc85:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 85) / 100);
-  stroke:rgba(119, 0, 255, 0.596);
+  stroke:rgba(164, 68, 244, 1);
 }
 
 
