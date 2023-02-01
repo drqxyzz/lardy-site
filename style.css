@@ -222,6 +222,16 @@ svg circle
   stroke:rgba(164, 68, 244, 1);
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 .pricing-box {
     margin-top: 10em;
@@ -242,12 +252,10 @@ svg circle
     min-width: 20vw;
     min-height: 25em;
     background-color: #1c1c1c;
-    box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, 0.53);
+    box-shadow: 0px 0px 49px 0px rgba(164, 68, 244, 1);
     border-radius: 20px;
-}
-
-.pricing:hover {
-  box-shadow: 0px 0px 49px 0px rgba(99, 99, 99, 0.596);
+    overflow: hidden;
+    
 }
 
 .pricing h1 {
@@ -265,13 +273,13 @@ svg circle
     border-radius: 10px;
     font-weight: bold;
     margin-top: 10%;
-    box-shadow: 0px 0px 49px -15px rgba(119, 0, 255, 0.596);   
     color: white;
     background: #272727;
+    transition: all .5s;
 }
 
 .pricing button:hover {
-    box-shadow: 0px 0px 34px 0px rgba(119, 0, 255, 0.596);
+    box-shadow: 0px 0px 34px 0px rgba(255, 255, 255, 0.596);
     border: none;
 }
 
@@ -312,6 +320,22 @@ svg circle
     padding: 0 15px;
 }
 
+.btns img {
+  margin: 15px;
+  width: 5em;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  filter: contrast(0) brightness(100);
+  z-index: 5;
+}
+
+.btns .github img {
+  right: 5em;
+  width: 4em;
+  bottom: 0.7em;
+}
+
 @media screen and (max-width: 700px) {
   .pricing-box {
     flex-direction: column;
@@ -325,4 +349,14 @@ svg circle
   .contact h1 {
     text-align: center;
   }
+  
+.btns .github img {
+  right: 0.5em;
+  width: 2em;
+  bottom: 3em;
+}
+
+.btns .discord img {
+  width: 3em;
+}
 }
