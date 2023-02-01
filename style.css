@@ -316,4 +316,7 @@ svg circle
   .projectinfo {
     text-align: center;
   }
+  .container-main {
+    flex-direction: column;
+  }
 }
